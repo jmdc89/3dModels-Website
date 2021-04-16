@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div style={{ width: "100%", height: "100%" }}>
-        <Canvas camera={{ zoom: 3, position: [300, 5, 50], fov: 80 }}>
+        <Canvas camera={{ zoom: 5, position: [300, 5, 50], fov: 80 }}>
           <ambientLight intensity={0.3} />
           <directionalLight position={[10, 10, 5]} intensity={0.5} />
           <spotLight intensity={0.75} position={[0, 1000, 0]} />

@@ -27,6 +27,7 @@ export default function Pinacle(props) {
         geometry={nodes.Modelotorresimpl.geometry}
         material={material}
         scale={[100, 100, 100]}
+        position={[0, -30, 0]}
       />
     </group>
   );
