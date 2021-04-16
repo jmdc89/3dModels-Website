@@ -10,12 +10,20 @@ export default function Pinacle(props) {
   });
 
   const group = useRef();
-  const { nodes } = useGLTF("/pinacle.glb");
+  const { nodes, materials } = useGLTF("/torrecompressv.glb");
+
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Modelotorresimpl.geometry} material={material} />
+      <group rotation={[-Math.PI / 2, 0, 0]}>
+        <mesh geometry={nodes.FLOOR.geometry} material={materials.FLOOR} />
+      </group>
+      <mesh
+        geometry={nodes.Modelotorresimpl.geometry}
+        material={material}
+        scale={[100, 100, 100]}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/torrecompress.glb");
+useGLTF.preload("/torrecompressv.glb");
