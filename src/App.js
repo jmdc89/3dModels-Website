@@ -1,10 +1,16 @@
-import React, { Suspense } from "react";
-import { Canvas } from "react-three-fiber";
+import React, { Suspense, useRef } from "react";
+import { Canvas, useFrame } from "react-three-fiber";
 import Pinacle from "./components/Pinacle/Pinacle";
 import { OrbitControls } from "@react-three/drei";
 import "./index.css";
 
 function App() {
+  // const mesh = useRef();
+
+  // useFrame(() => {
+  //   mesh.current.rotation.x = mesh.current.rotation.y += 0.01;
+  // });
+
   return (
     <>
       <div style={{ width: "100%", height: "100%" }}>

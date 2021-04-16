@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Pinacle(props) {
   const material = new THREE.MeshStandardMaterial({
-    color: 0x797980,
+    color: 0xe5a95a,
     transparent: false,
     opacity: 1,
   });
